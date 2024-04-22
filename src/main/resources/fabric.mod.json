@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bmnw",
+	"version": "${version}",
+	"name": "Bunkers, Machines & Nuclear Weapons",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bmnw/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mavity.bmnw.BunkersMachinesNuclearWeapons"
+		],
+		"client": [
+			"net.mavity.bmnw.BunkersMachinesNuclearWeaponsClient"
+		],
+		"fabric-datagen": [
+			"net.mavity.bmnw.BunkersMachinesNuclearWeaponsDataGenerator"
+		]
+	},
+	"mixins": [
+		"bmnw.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
