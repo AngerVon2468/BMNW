@@ -1,4 +1,4 @@
-package net.mavity.bmnw;
+package net.mavity.bmnw.core;
 
 import net.fabricmc.api.ClientModInitializer;
 
@@ -13,7 +13,7 @@ public class BunkersMachinesNuclearWeaponsClient implements ClientModInitializer
     @Override
     public void onInitializeClient() {
 
-        // Logger
+        // Logger & Initializing Classes
         BunkersMachinesNuclearWeaponsClient.LOGGER.info(BunkersMachinesNuclearWeaponsClient.NAME + " has registered its' client class");
 
     }

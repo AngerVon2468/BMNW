@@ -1,7 +1,12 @@
-package net.mavity.bmnw;
+package net.mavity.bmnw.core;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mavity.bmnw.notcore.blockregister.BlockInit;
+import net.mavity.bmnw.notcore.itemregister.ItemInit;
+import net.mavity.bmnw.notcore.propertyregister.BMNWProperties;
+
+import net.mavity.bmnw.notcore.soundregister.SoundInit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,7 +21,12 @@ public class BunkersMachinesNuclearWeapons implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		// Logger & Initializing Classes
 		BunkersMachinesNuclearWeapons.LOGGER.info(BunkersMachinesNuclearWeapons.NAME + " has registered its' main class");
+		BlockInit.registerBMNWBlocks();
+		ItemInit.registerBMNWItems();
+		BMNWProperties.registerBMNWProperties();
+		SoundInit.registerBMNWSounds();
 
 	}
 }
